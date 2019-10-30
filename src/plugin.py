@@ -160,7 +160,10 @@ def run(bk):
         basepath = os.path.expanduser('~')
     
     # parse the opf to get first dc:title
-    opfdata = bk.readotherfile("OEBPS/content.opf")
+    opfbookhref = "OEBPS/content.opf"
+    if bk.launcher_version() >= 20190927:
+        opfbookhref = bk.get_opfbookpath();
+    opfdata = bk.readotherfile(opfbookhref)
     qp = bk.qp
     bk.qp.setContent(opfdata)
     dctitle = "foldername"
