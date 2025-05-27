@@ -1,2 +1,6 @@
+v050
+  - remove tk gui and replace it with a Qt PySide6 based one (min version is now Sigil is 2.0.0)
+v040
+  - Misc bug fixes
 v030
   - First official release of the FolderOut plugin for Sigil
