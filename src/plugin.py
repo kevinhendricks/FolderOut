@@ -20,7 +20,7 @@ try:
 except ImportError:
     from urllib import unquote
 
-from plugin_utils import QtWidgets
+from plugin_utils_light import QtWidgets
 
 # convert string to utf-8
 def utf8_str(p, enc='utf-8'):
